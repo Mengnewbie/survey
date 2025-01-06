@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="leagueSurvey.css">
+    <title>League of Legends Survey</title>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+    <h1 id="title" class="text-center">League of Legends Survey</h1>
+    <p id="description"  class="description text-center">Thanks for helping us improving our game's experience</p>
+    </header>
+    <form id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Riot IGN eg. LuxSniffer#69420"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="luxfeetsniffer@riot.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number"
+                >Age<span class="clue">(optional)</span></label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+              />
+        <div class="form-group">
+            <p>Which role are you playing the most?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select Your Role</option>
+                <option value="Top">Top</option>
+                <option value="Jungle">Jungle</option>
+                <option value="Mid">Mid</option>
+                <option value="ADC">ADC</option>
+                <option value="Support">Support</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend League of Legends to a friend?</p>
+            <label>
+            <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+            />Definitely</label
+            >
+            <label>
+            <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+            />Maybe</label
+            >
+
+            <label
+            ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+            />Not sure</label
+            >
+        <div class="form-group">
+            <p>What is your favorite gamemode in League of Legend?</p>
+            
+            <select id="most-like" name="mostLike" class="form-control" required>
+                <option disabled selected value>Select a gamemode</option>
+                <option value="Summoner rift">Summoner rift</option>
+                <option value="Ranked Solo/Duo">Ranked Solo/Duo</option>
+                <option value="Ranked Flex">Ranked Flex</option>
+                <option value="TFT">TFT</option>
+                <option value="Aram">Aram</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+  
+            <label
+              ><input
+                name="prefer"
+                value="matchmaking-system"
+                type="checkbox"
+                class="input-checkbox"
+              />Matchmaking System</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="surrender-option"
+                type="checkbox"
+                class="input-checkbox"
+              />Surrender option</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="balancing-character"
+                type="checkbox"
+                class="input-checkbox"
+              />Balancing Character</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="voice-communication"
+                type="checkbox"
+                class="input-checkbox"
+              />Voice communication</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="skin-vfx"
+                type="checkbox"
+                class="input-checkbox"
+              />Skin VFX</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Graphics"
+                type="checkbox"
+                class="input-checkbox"
+              />Graphics</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="rank-system"
+                type="checkbox"
+                class="input-checkbox"
+              />Rank System</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="chat-restriction"
+                type="checkbox"
+                class="input-checkbox"
+              />Chat Restriction</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="crafting-system"
+                type="checkbox"
+                class="input-checkbox"
+              />Crafting System</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="gacha-system"
+                type="checkbox"
+                class="input-checkbox"
+              />Gacha System</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="nerf-adc"
+                type="checkbox"
+                class="input-checkbox"
+              />Nerf ADC</label
+            >
+        </div>    
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+        </div>
+        <div class="contact">
+            <p>Contact us <a class="contact" href ="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"></ahref>here</p>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
